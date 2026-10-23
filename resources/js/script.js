@@ -1,5 +1,16 @@
 
-<script>
+export default {
+  darkMode: 'class',
+  content: [
+    "./resources/**/*.blade.php",
+    "./resources/**/*.js",
+    "./resources/**/*.vue",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
 const toggleOpen = document.getElementById('toggleOpen');
 const toggleClose = document.getElementById('toggleClose');
 const menu = document.getElementById('collapseMenu');
@@ -31,4 +42,3 @@ document.addEventListener('keydown', (e) => {
         closeMenu();
     }
 });
-</script>
