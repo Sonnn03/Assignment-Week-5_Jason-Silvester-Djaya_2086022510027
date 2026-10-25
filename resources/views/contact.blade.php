@@ -1,23 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Halaman About</title>
     @vite('resources/css/style.css')
 </head>
-
 <body>
-
-     <nav
+        <nav
    class="flex py-2 px-4 md:px-8 bg-white border-b border-slate-300 dark:border-neutral-700 dark:bg-neutral-900 min-h-[68px] relative z-20"
    aria-label="Main navigation">
    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-4 w-full">
       <a href="#"
          class="min-w-9 inline-block focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded">
-         <span class="sr-only">Your Company</span>
+         <span class="sr-only">PORTOFOLIO</span>
          <img src="https://readymadeui.com/logo-alt.svg" alt="readymadeui logo" class="h-9 w-auto" />
       </a>
 
@@ -50,10 +46,6 @@
                   aria-current="page">Home</a>
             </li>
             <li>
-               <a href="#"
-                  class="hover:text-blue-700 dark:hover:text-blue-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded">Features</a>
-            </li>
-            <li>
                <a href="/blog"
                   class="hover:text-blue-700 dark:hover:text-blue-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded">Blog</a>
             </li>
@@ -69,13 +61,6 @@
       </div>
 
       <div class="flex items-center gap-4">
-         <a href="#"
-            class="text-slate-900 text-sm font-semibold hover:text-blue-700 dark:text-slate-50 dark:hover:text-blue-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded">Log
-            in</a>
-         <a href="#"
-            class="py-2 px-3.5 text-sm rounded-md font-semibold cursor-pointer text-white border border-blue-600 bg-blue-600 hover:bg-blue-700 transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500">Sign
-            up</a>
-
          <button type="button" aria-controls="collapseMenu" aria-expanded="false" aria-haspopup="true" id="toggleOpen"
             class="cursor-pointer lg:hidden focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded">
             <span class="sr-only">Open main menu</span>
@@ -90,17 +75,36 @@
    </div>
 </nav>
 
-        <ul>
-        <li class="text-amber-950, px-64">
-            Instagram <a href="https://www.instagram.com/p/Dei2NVLTq7U/?xtok=emcxa3RtbTZpbzZ3" target="_blank">My Akun guweh</a>
-        </li>
-        <li>
-            Tiktok : <a href="https://www.tiktok.com/@jasonnnn.03?is_from_webapp=1&sender_device=pc" target="_blank">Sonnnnn</a>
-        </li>
-        <li>
-            Github : <a href="https://github.com/Sonnn03" target="_blank">SoOnnn03</a>
-        </li>
-    </ul>
+    {{-- ===================== TAMBAHAN: MULAI ===================== --}}
+    <section class="max-w-7xl mx-auto px-4 md:px-8 py-12">
+        <p class="text-sm font-semibold text-blue-700 dark:text-blue-400 uppercase tracking-wide">Tentang Saya</p>
+        <h2 class="mt-2 text-3xl md:text-4xl font-bold text-slate-900 dark:text-slate-50">
+            Halo, Perkenalkan saya Jason Silvester Djaya
+        </h2>
+        <p class="mt-4 max-w-2xl text-slate-600 dark:text-slate-400 leading-relaxed">
+            Saya adalah seorang mahasiswa Universitas Ciputra jurusan IMT. Saya senang dalam mempelajari hal baru yang saya belum ketahui, dan saya senang 
+            untuk ikut aktif dalam berbagai kegiatan yang dilaksanakan ataupun diselenggarakan di kampus.
+        </p>
+
+        <dl class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="rounded-xl border border-slate-300 dark:border-neutral-700 p-6">
+                <dt class="text-sm text-slate-500 dark:text-slate-400">Nama Lengkap</dt>
+                <dd class="mt-1 font-semibold text-slate-900 dark:text-slate-50">Jason Silvester Djaya</dd>
+            </div>
+            <div class="rounded-xl border border-slate-300 dark:border-neutral-700 p-6">
+                <dt class="text-sm text-slate-500 dark:text-slate-400">Status</dt>
+                <dd class="mt-1 font-semibold text-slate-900 dark:text-slate-50">Mahasiswa</dd>
+            </div>
+            <div class="rounded-xl border border-slate-300 dark:border-neutral-700 p-6">
+                <dt class="text-sm text-slate-500 dark:text-slate-400">Fokus</dt>
+                <dd class="mt-1 font-semibold text-slate-900 dark:text-slate-50">Web Development</dd>
+            </div>
+        </dl>
+
+        <h3 class="mt-10 text-xl font-bold text-slate-900 dark:text-slate-50">Keahlian</h3>
+        <div class="mt-4 flex flex-wrap gap-3">
+        </div>
+    </section>
 
     <footer class="bg-slate-100 dark:bg-neutral-900 pt-16 pb-8 px-4 md:px-8">
    <div class="max-w-md">
@@ -116,19 +120,7 @@
 
       <ul class="flex flex-wrap gap-6 mt-6">
          <li>
-            <a href="#"
-               class="flex items-center bg-slate-200 dark:bg-neutral-800 w-8 h-8 p-2 rounded-full focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
-               aria-label="Facebook">
-               <svg xmlns="http://www.w3.org/2000/svg" class="size-full fill-slate-600 dark:fill-slate-50"
-                  viewBox="0 0 155.139 155.139" aria-hidden="true">
-                  <path
-                     d="M89.584 155.139V84.378h23.742l3.562-27.585H89.584V39.184c0-7.984 2.208-13.425 13.67-13.425l14.595-.006V1.08C115.325.752 106.661 0 96.577 0 75.52 0 61.104 12.853 61.104 36.452v20.341H37.29v27.585h23.814v70.761z"
-                     data-original="#010002" />
-               </svg>
-            </a>
-         </li>
-         <li>
-            <a href="#"
+            <a href="https://www.linkedin.com/in/jason-silvester-djaya-347616381?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
                class="flex items-center bg-slate-200 dark:bg-neutral-800 w-8 h-8 p-2 rounded-full focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
                aria-label="LinkedIn">
                <svg xmlns="http://www.w3.org/2000/svg" class="size-full fill-slate-600 dark:fill-slate-50"
@@ -140,19 +132,31 @@
             </a>
          </li>
          <li>
-            <a href="#"
+            <a href="https://www.instagram.com/jasonnnn.03?xtok=NXg5ajQ1bmFvYnRp"
                class="flex items-center bg-slate-200 dark:bg-neutral-800 w-8 h-8 p-2 rounded-full focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
-               aria-label="X">
+               aria-label="Instagram">
                <svg xmlns="http://www.w3.org/2000/svg" class="size-full fill-slate-600 dark:fill-slate-50"
-                  viewBox="0 0 1226.37 1226.37" aria-hidden="true">
+                  viewBox="0 0 24 24" aria-hidden="true">
                   <path
-                     d="M727.348 519.284 1174.075 0h-105.86L680.322 450.887 370.513 0H13.185l468.492 681.821L13.185 1226.37h105.866l409.625-476.152 327.181 476.152h357.328L727.322 519.284zM582.35 687.828l-47.468-67.894-377.686-540.24H319.8l304.797 435.991 47.468 67.894 396.2 566.721H905.661L582.35 687.854z"
+                     d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
                      data-original="#000000" />
                </svg>
             </a>
          </li>
          <li>
-            <a href="#"
+            <a href="https://youtube.com/@jasonnn.03?si=U-mh0yo2IDmP2ajy"
+               class="flex items-center bg-slate-200 dark:bg-neutral-800 w-8 h-8 p-2 rounded-full focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
+               aria-label="YouTube">
+               <svg xmlns="http://www.w3.org/2000/svg" class="size-full fill-slate-600 dark:fill-slate-50"
+                  viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                     d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                     data-original="#000000" />
+               </svg>
+            </a>
+         </li>
+         <li>
+            <a href="https://github.com/Sonnn03"
                class="flex items-center bg-slate-200 dark:bg-neutral-800 w-8 h-8 p-2 rounded-full focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
                aria-label="Github">
                <svg xmlns="http://www.w3.org/2000/svg" class="size-full fill-slate-600 dark:fill-slate-50"
@@ -166,112 +170,29 @@
       </ul>
    </div>
 
-   <div class="grid grid-cols-2 lg:grid-cols-4 gap-y-12 gap-x-6 sm:gap-x-8 mt-12">
       <div class="space-y-6">
-         <h3 class="text-slate-900 dark:text-slate-50 font-semibold text-sm">Services</h3>
-         <ul class="space-y-4 text-sm text-slate-600 dark:text-slate-400 font-normal">
+         <ul></ul>
+         <h2 class="text-slate-900 dark:text-slate-50 font-semibold text-xl">Jason Silvester Djaya</h2>
+         <ul class="space-y-3 text-sm text-slate-600 dark:text-slate-400 font-normal">
             <li>
-               <a href="#"
-                  class="hover:text-slate-900 dark:hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded transition-all">Web
-                  Development</a>
+               <a href="/about"
+                  class="hover:text-slate-900 dark:hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded transition-all">About</a>
             </li>
             <li>
-               <a href="#"
-                  class="hover:text-slate-900 dark:hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded transition-all">Pricing</a>
-            </li>
-            <li>
-               <a href="#"
-                  class="hover:text-slate-900 dark:hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded transition-all">Support</a>
-            </li>
-            <li>
-               <a href="#"
-                  class="hover:text-slate-900 dark:hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded transition-all">Client
-                  Portal</a>
-            </li>
-            <li>
-               <a href="#"
-                  class="hover:text-slate-900 dark:hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded transition-all">Resources</a>
-            </li>
-         </ul>
-      </div>
-
-      <div class="space-y-6">
-         <h3 class="text-slate-900 dark:text-slate-50 font-semibold text-sm">Platforms</h3>
-         <ul class="space-y-4 text-sm text-slate-600 dark:text-slate-400 font-normal">
-            <li>
-               <a href="#"
-                  class="hover:text-slate-900 dark:hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded transition-all">Hubspot</a>
-            </li>
-            <li>
-               <a href="#"
-                  class="hover:text-slate-900 dark:hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded transition-all">Integration
-                  Services</a>
-            </li>
-            <li>
-               <a href="#"
-                  class="hover:text-slate-900 dark:hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded transition-all">Marketing
-                  Glossar</a>
-            </li>
-            <li>
-               <a href="#"
-                  class="hover:text-slate-900 dark:hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded transition-all">UIPath</a>
-            </li>
-         </ul>
-      </div>
-
-      <div class="space-y-6">
-         <h3 class="text-slate-900 dark:text-slate-50 font-semibold text-sm">Company</h3>
-         <ul class="space-y-4 text-sm text-slate-600 dark:text-slate-400 font-normal">
-            <li>
-               <a href="#"
-                  class="hover:text-slate-900 dark:hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded transition-all">About
-                  us</a>
-            </li>
-            <li>
-               <a href="#"
-                  class="hover:text-slate-900 dark:hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded transition-all">Careers</a>
-            </li>
-            <li>
-               <a href="#"
+               <a href="/blog"
                   class="hover:text-slate-900 dark:hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded transition-all">Blog</a>
             </li>
             <li>
-               <a href="#"
-                  class="hover:text-slate-900 dark:hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded transition-all">Portfolio</a>
+               <a href="/contact"
+                  class="hover:text-slate-900 dark:hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded transition-all">Contact</a>
             </li>
             <li>
-               <a href="#"
-                  class="hover:text-slate-900 dark:hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded transition-all">Events</a>
+               <a href="/portfolio"
+                  class="hover:text-slate-900 dark:hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded transition-all">Portfolio</a>
             </li>
          </ul>
       </div>
 
-      <div class="space-y-6">
-         <h3 class="text-slate-900 dark:text-slate-50 font-semibold text-sm">Additional</h3>
-         <ul class="space-y-4 text-sm text-slate-600 dark:text-slate-400 font-normal">
-            <li>
-               <a href="#"
-                  class="hover:text-slate-900 dark:hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded transition-all">FAQ</a>
-            </li>
-            <li>
-               <a href="#"
-                  class="hover:text-slate-900 dark:hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded transition-all">Partners</a>
-            </li>
-            <li>
-               <a href="#"
-                  class="hover:text-slate-900 dark:hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded transition-all">Sitemap</a>
-            </li>
-            <li>
-               <a href="#"
-                  class="hover:text-slate-900 dark:hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded transition-all">Contact</a>
-            </li>
-            <li>
-               <a href="#"
-                  class="hover:text-slate-900 dark:hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded transition-all">News</a>
-            </li>
-         </ul>
-      </div>
-   </div>
 
    <hr class="my-8 border-slate-300 dark:border-neutral-700" />
 
@@ -298,5 +219,4 @@
 </footer>
 
 </body>
-
 </html>
