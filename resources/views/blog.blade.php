@@ -7,7 +7,6 @@
     @vite('resources/css/style.css')
 </head>
 <body>
-    <!-- ===================== HEADER / NAVBAR ===================== -->
     <nav class="flex py-2 px-4 md:px-8 bg-white border-b border-slate-300 dark:border-neutral-700 dark:bg-neutral-900 min-h-[68px] relative z-20" aria-label="Main navigation">
         <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-4 w-full">
             <a href="#" class="min-w-9 inline-block focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded">
@@ -34,7 +33,6 @@
                         <a href="/" class="hover:text-blue-700 dark:hover:text-blue-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded">Home</a>
                     </li>
                     <li>
-                        <!-- aria-current ditambahkan di sini untuk menandakan halaman aktif -->
                         <a href="/blog" class="hover:text-blue-700 dark:hover:text-blue-400 text-blue-700 dark:text-blue-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded" aria-current="page">Blog</a>
                     </li>
                     <li>
@@ -57,18 +55,12 @@
         </div>
     </nav>
 
-    <!-- ===================== BAGIAN KONTEN BLOG ===================== -->
     <main class="max-w-7xl mx-auto px-4 md:px-8 py-12 min-h-screen">
         <div class="mb-10 text-center">
             <h1 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-slate-50">Blog & Artikel Terkini</h1>
-            <p class="mt-4 text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
-                Kumpulan tulisan terbaru mengenai Web Development, teknologi, dan eksplorasi dunia IT.
-            </p>
         </div>
 
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            
-            <!-- Artikel 1 -->
             <article class="bg-white dark:bg-neutral-800 border border-slate-200 dark:border-neutral-700 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
                 <img src="{{ asset('img/tailwind.png') }}" alt="Cover Artikel" class="w-full h-48 object-cover">
                 <div class="p-6 flex flex-col flex-grow">
@@ -83,16 +75,14 @@
                     <p class="text-slate-600 dark:text-slate-400 mb-4 line-clamp-3 text-sm flex-grow">
                         Tailwind CSS mempermudah kita dalam membangun antarmuka web yang responsif tanpa perlu menulis kode CSS dari nol. Mari kita bahas langkah pertamanya.
                     </p>
-                    <a href="#" class="inline-flex items-center font-semibold text-blue-600 dark:text-blue-400 hover:underline text-sm">
+                    <a href="https://tailwindcss.com/" class="inline-flex items-center font-semibold text-blue-600 dark:text-blue-400 hover:underline text-sm">
                         Baca selengkapnya
                         <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
                     </a>
                 </div>
             </article>
 
-            <!-- Artikel 2 -->
             <article class="bg-white dark:bg-neutral-800 border border-slate-200 dark:border-neutral-700 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
-               <!-- Pastikan Anda memiliki gambar laravel.png di dalam folder public/img -->
                <img src="{{ asset('img/laravel.png') }}" alt="Cover Artikel Laravel" class="w-full h-48 object-cover">
                
                <div class="p-6 flex flex-col flex-grow">
@@ -102,40 +92,42 @@
                         <time datetime="2026-10-25">25 Okt 2026</time>
                   </div>
                   <h2 class="text-xl font-bold text-slate-900 dark:text-slate-50 mb-2 leading-tight">
-                        <a href="{{ url('/blog/mengenal-laravel') }}" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                        <a href="https://laravel.com/" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                            Mengenal Laravel: Framework PHP Terpopuler saat ini
                         </a>
                   </h2>
                   <p class="text-slate-600 dark:text-slate-400 mb-4 line-clamp-3 text-sm flex-grow">
                         Pelajari mengapa Laravel menjadi pilihan utama bagi developer web. Mulai dari sistem routing yang mudah, keamanan bawaan yang tangguh, hingga fitur Eloquent ORM.
                   </p>
-                  <a href="{{ url('/blog/mengenal-laravel') }}" class="inline-flex items-center font-semibold text-blue-600 dark:text-blue-400 hover:underline text-sm">
+                  <a href="https://laravel.com/" class="inline-flex items-center font-semibold text-blue-600 dark:text-blue-400 hover:underline text-sm">
                         Baca selengkapnya
                         <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
                   </a>
                </div>
             </article>
 
-            <!-- Artikel 3 -->
             <article class="bg-white dark:bg-neutral-800 border border-slate-200 dark:border-neutral-700 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
-                <img src="https://placehold.co/600x400/e2e8f0/1e293b?text=Kampus+Life" alt="Cover Artikel" class="w-full h-48 object-cover">
-                <div class="p-6 flex flex-col flex-grow">
-                    <div class="flex items-center gap-2 text-sm text-slate-500 dark:text-slate-400 mb-3">
-                        <span class="font-semibold text-blue-600 dark:text-blue-400">Kampus Life</span>
+               <img src="{{ asset('img/flutter.png') }}" alt="Cover Artikel Flutter" class="w-full h-48 object-cover">
+               
+               <div class="p-6 flex flex-col flex-grow">
+                  <div class="flex items-center gap-2 text-sm text-slate-500 dark:text-slate-400 mb-3">
+                        <span class="font-semibold text-blue-600 dark:text-blue-400">Mobile Dev</span>
                         <span>&bull;</span>
-                        <time datetime="2026-10-15">15 Okt 2026</time>
-                    </div>
-                    <h2 class="text-xl font-bold text-slate-900 dark:text-slate-50 mb-2 leading-tight">
-                        <a href="#" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Pengalaman Menjadi Mahasiswa IMT Universitas Ciputra</a>
-                    </h2>
-                    <p class="text-slate-600 dark:text-slate-400 mb-4 line-clamp-3 text-sm flex-grow">
-                        Menjadi mahasiswa Informatika tidak hanya belajar coding, tetapi juga aktif di berbagai kegiatan kampus. Ini ceritaku!
-                    </p>
-                    <a href="#" class="inline-flex items-center font-semibold text-blue-600 dark:text-blue-400 hover:underline text-sm">
+                        <time datetime="2026-10-18">18 Okt 2026</time>
+                  </div>
+                  <h2 class="text-xl font-bold text-slate-900 dark:text-slate-50 mb-2 leading-tight">
+                        <a href="https://flutter.dev/" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                           Membangun Aplikasi Mobile Super Cepat dengan Flutter
+                        </a>
+                  </h2>
+                  <p class="text-slate-600 dark:text-slate-400 mb-4 line-clamp-3 text-sm flex-grow">
+                        Flutter memungkinkan developer membuat aplikasi native untuk iOS dan Android hanya dari satu basis kode. Mari pelajari konsep dasar Widget dan keunggulannya.
+                  </p>
+                  <a href="https://flutter.dev/" class="inline-flex items-center font-semibold text-blue-600 dark:text-blue-400 hover:underline text-sm">
                         Baca selengkapnya
                         <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                    </a>
-                </div>
+                  </a>
+               </div>
             </article>
 
         </div>

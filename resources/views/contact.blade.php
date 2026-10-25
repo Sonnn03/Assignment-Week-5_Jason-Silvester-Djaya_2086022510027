@@ -75,7 +75,6 @@
    </div>
 </nav>
 
-    {{-- ===================== BAGIAN CONTACT ===================== --}}
     <section class="max-w-7xl mx-auto px-4 md:px-8 py-12">
         <p class="text-sm font-semibold text-blue-700 dark:text-blue-400 uppercase tracking-wide">Kontak</p>
         <h2 class="mt-2 text-3xl md:text-4xl font-bold text-slate-900 dark:text-slate-50">
